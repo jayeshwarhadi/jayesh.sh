@@ -1,4 +1,4 @@
-const savedTheme = localStorage.getItem("Theme") || "light";
+const savedTheme = localStorage.getItem("Theme") || "dark";
 if (savedTheme === "light") {
   document.documentElement.style.setProperty("--background", "#ffffff");
   document.documentElement.style.setProperty("--secondary", "#08cb00");
