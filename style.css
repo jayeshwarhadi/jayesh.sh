@@ -33,6 +33,9 @@ body {
   height: 30px;
   background-color: var(--secondary);
 
+  position: sticky;
+  top: 0px;
+
   display: grid;
   grid-template-columns: 0.1fr 1fr 0.1fr;
 }
