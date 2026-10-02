@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- Font : Cascadia Code import cdn -->
     <link
       href="https://fonts.googleapis.com/css2?family=Cascadia+Code&display=swap"
       rel="stylesheet"
@@ -13,10 +14,14 @@
     <title>jayesh.sh</title>
   </head>
   <body>
+    <!-- Sets default theme to dark if none is selected else fetches theme from local Storage
+         and applies the appropritate theme to the page
+    -->
     <script src="scripts/defaultTheme.js"></script>
     <div id="container">
       <div id="title">
         <div class="actionBtn">
+          <!-- These are circle buttons linking github repo and refresh-->
           <div class="circle">
             <a href="https://github.com/jayeshwarhadi/jayesh.sh" target="_blank"
               ><img src="Assets/star.webp" alt="give a github star"
@@ -31,10 +36,12 @@
               "
               ><img src="Assets/refresh.webp" alt="refresh website"
             /></a>
+            <!-- Refreshes the website -->
           </div>
         </div>
         <h2>terminal@portfolio ~ jayesh.sh</h2>
         <div class="actionBtn">
+          <!-- Button associated with theme change -->
           <div class="circle">
             <a id="themeBtn" style="cursor: pointer"
               ><img src="Assets/theme.webp" alt="change theme"
@@ -42,11 +49,13 @@
           </div>
         </div>
       </div>
+      <!-- Content starts -->
       <div id="content">
         <p id="start">Initializing<span class="loadingDots"></span></p>
         <p id="intro"></p>
       </div>
     </div>
+    <!-- JQuery Google CDN link then external JS file -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="script.js"></script>
   </body>

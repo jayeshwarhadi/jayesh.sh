@@ -1,4 +1,5 @@
 const savedTheme = localStorage.getItem("Theme") || "dark";
+// automatically sets theme to dark if its user's first time
 if (savedTheme === "light") {
   document.documentElement.style.setProperty("--background", "#ffffff");
   document.documentElement.style.setProperty("--secondary", "#08cb00");
