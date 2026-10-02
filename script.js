@@ -23,3 +23,13 @@ themeBtn.addEventListener("click", function () {
     themeTo("light");
   }
 });
+
+// Starter texts
+const start = document.getElementById("start");
+const loadingDots = document.querySelector(".loadingDots");
+window.addEventListener("load", function () {
+  setTimeout(function () {
+    loadingDots.style.display = "none";
+    start.textContent = "Initialization Successful";
+  }, 1000);
+});

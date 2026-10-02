@@ -50,7 +50,7 @@ body {
   margin: 2px;
   border-radius: 100%;
   background-color: red;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.635);
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.635);
 }
 .circle:first-child {
   background-color: yellow;
@@ -71,4 +71,25 @@ body {
   color: var(--primary);
   font-size: 20px;
   margin-top: 2.5px;
+}
+
+#start {
+  color: var(--primary);
+  margin-left: 4px;
+}
+.loadingDots::after {
+  content: " .";
+  width: 3.5rem;
+  animation: loadingDotsA 2s steps(3) infinite;
+}
+@keyframes loadingDotsA {
+  0% {
+    content: " .";
+  }
+  33% {
+    content: " . .";
+  }
+  66% {
+    content: " . . .";
+  }
 }
