@@ -1,12 +1,14 @@
 // theme toggle management
 function themeTo(theme) {
   if (theme === "light") {
+    document.documentElement.style.setProperty("--highlights", "#08cb00");
     document.documentElement.style.setProperty("--background", "#ffffff");
     document.documentElement.style.setProperty("--secondary", "#08cb00");
     document.documentElement.style.setProperty("--primary", "#253900");
     document.documentElement.style.setProperty("--tertiary", "#000000");
     localStorage.setItem("Theme", "light");
   } else {
+    document.documentElement.style.setProperty("--highlights", "#ffffff");
     document.documentElement.style.setProperty("--background", "#000000");
     document.documentElement.style.setProperty("--secondary", "#253900");
     document.documentElement.style.setProperty("--primary", "#08cb00");
@@ -33,11 +35,12 @@ window.addEventListener("load", function () {
     start.textContent = "Initialization Successful";
   }, 1000);
   setTimeout(() => {
-    const introText = `<br>
-      [+] USER: Jayesh J Warhadi<br>
-      [+] ROLE: Software Developer / Tech Enthusiast<br>
-      [+] STATUS: Building things for the web. (with authenticity)<br><br>
-      `;
+    const introText = `
+      [+] USER: Jayesh J Warhadi
+      [+] ROLE: Software Developer / Tech Enthusiast
+      [+] STATUS: Building things for the web. (with authenticity)
+
+type 'help' for commands`;
     $("#intro").html(introText);
   }, 1500);
 });
@@ -52,10 +55,18 @@ async function runProcess() {
       $("#user-input").focus();
     });
     const commands = {
-      help: "Help Done",
-      about: "About Done",
-      skills: "Skills Done",
-      contact: "Contact Done",
+      help: `
+clear - clean the mess on your screen :B
+about - learn more about me :D
+contact - reach out to me
+projects - see what i am working on :P
+certifications - see what i have achieved
+skills - get to know my skills`,
+      about: `About Done`,
+      contact: `Contact Done`,
+      projects: `Projects Done`,
+      certifications: `Certifications Done`,
+      skills: `Skills Done`,
     };
     $("#user-input").on("keypress", function (e) {
       if (e.which === 13) {

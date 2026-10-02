@@ -7,13 +7,14 @@
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
-  color: white;
+  color: var(--highlights);
 }
 html {
   height: 100%;
 }
 /* Js sets these values but still here for redundancy */
 :root {
+  --highlights: #ffffff;
   --primary: #08cb00;
   --secondary: #253900;
   --tertiary: #0e1b02;
@@ -96,7 +97,7 @@ body {
     content: " . . .";
   }
 }
-
+/* User Interaction Styling */
 .location {
   color: rgb(27, 198, 232);
 }
@@ -117,3 +118,23 @@ body {
   margin-bottom: 15px;
   white-space: pre-wrap;
 }
+
+/* Output block Pre-made ready to use styles */
+.output-block > .btn {
+  background-color: var(--highlights);
+  color: var(--primary);
+  text-decoration: none;
+  padding: 5px 10px;
+}
+.output-block > .btn:hover {
+  background-color: var(--primary);
+  color: var(--highlights);
+}
+.output-block > .highlight {
+  color: rgb(27, 198, 232);
+}
+.output-block > .link {
+  color: var(--primary);
+}
+/* .output-block > .image {
+} */
