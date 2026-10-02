@@ -73,7 +73,7 @@ body {
   margin-top: 2.5px;
 }
 
-#start {
+#content > p {
   color: var(--primary);
   margin-left: 4px;
 }

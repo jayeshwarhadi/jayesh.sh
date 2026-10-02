@@ -24,7 +24,7 @@ themeBtn.addEventListener("click", function () {
   }
 });
 
-// Starter texts
+// Starter Texts
 const start = document.getElementById("start");
 const loadingDots = document.querySelector(".loadingDots");
 window.addEventListener("load", function () {
@@ -32,4 +32,17 @@ window.addEventListener("load", function () {
     loadingDots.style.display = "none";
     start.textContent = "Initialization Successful";
   }, 1000);
+  setTimeout(() => {
+    const introText = `<br>
+[+] USER: Jayesh J Warhadi<br>
+[+] ROLE: Software Developer / Tech Enthusiast<br>
+[+] STATUS: Building things for the web. (with authenticity)<br>
+`;
+    $("#intro").html(introText);
+    takeInput();
+  }, 1500);
 });
+
+function takeInput() {
+  // to be added
+}
