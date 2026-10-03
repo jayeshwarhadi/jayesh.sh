@@ -31,6 +31,7 @@ const start = document.getElementById("start");
 const loadingDots = document.querySelector(".loadingDots");
 const now = new Date();
 const istDateTime = now.toLocaleString("en-IN", { timeZone: "Asia/Kolkata" });
+const userLocalDate = now.toLocaleString("en-IN");
 let myStatus = "Unknown";
 if (now.getHours < 5 && now.getHours > 22) {
   myStatus = "Sleeping zzz";
@@ -40,7 +41,7 @@ if (now.getHours < 5 && now.getHours > 22) {
 window.addEventListener("load", function () {
   setTimeout(function () {
     loadingDots.style.display = "none";
-    start.textContent = `Initialization Successful at ${now}`;
+    start.textContent = `Initialization Successful at ${userLocalDate}`;
   }, 1000);
   setTimeout(() => {
     const introText = `
