@@ -124,20 +124,20 @@ body {
 }
 
 /* Output block Pre-made ready to use styles */
-.output-block > .btn {
+.output-block .btn {
   background-color: var(--highlights);
   color: var(--primary);
   text-decoration: none;
   padding: 5px 10px;
 }
-.output-block > .btn:hover {
+.output-block .btn:hover {
   background-color: var(--primary);
   color: var(--highlights);
 }
-.output-block > .highlight {
+.output-block .highlight {
   color: rgb(27, 198, 232);
 }
-.output-block > .link {
+.output-block .link {
   color: var(--primary);
 }
 /* .output-block > .image {

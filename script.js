@@ -29,15 +29,25 @@ themeBtn.addEventListener("click", function () {
 // Starter Texts
 const start = document.getElementById("start");
 const loadingDots = document.querySelector(".loadingDots");
+const now = new Date();
+const istDateTime = now.toLocaleString("en-IN", { timeZone: "Asia/Kolkata" });
+let myStatus = "Unknown";
+if (now.getHours < 5 && now.getHours > 22) {
+  myStatus = "Sleeping zzz";
+} else {
+  myStatus = "Awake :D";
+}
 window.addEventListener("load", function () {
   setTimeout(function () {
     loadingDots.style.display = "none";
-    start.textContent = "Initialization Successful";
+    start.textContent = `Initialization Successful at ${now}`;
   }, 1000);
   setTimeout(() => {
     const introText = `
       [+] USER: Jayesh J Warhadi
       [+] ROLE: Software Developer / Tech Enthusiast
+      [+] LOCATION: Pune IST (GMT+5:30)
+      [+] MY TIME: ${istDateTime} in Pune and is probably ${myStatus}
       [+] STATUS: Building things for the web. (with authenticity)
 
 type 'help' for commands`;
@@ -62,7 +72,15 @@ contact - reach out to me
 projects - see what i am working on :P
 certifications - see what i have achieved
 skills - get to know my skills`,
-      about: `About Done`,
+      about: `
+ABOUT:
+
+I'm a <span class="highlight">developer</span> who loves turning complex problems into elegant, 
+efficient code. I specialize in <span class="highlight">building good, scalable applications 
+and learning new technologies</span> along the way. 
+
+When I'm not in the terminal or VS Code, you can find me making <a href="#" class="link">something in blender</a>
+or scrolling through <a href="https://www.linkedin.com/in/jayeshwarhadi/" target="_blank" class="link">LinkedIn.</span></a>`,
       contact: `Contact Done`,
       projects: `Projects Done`,
       certifications: `Certifications Done`,
