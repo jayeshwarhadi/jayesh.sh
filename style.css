@@ -9,6 +9,10 @@
   font-style: normal;
   color: var(--highlights);
 }
+input[type="text"] {
+  caret-shape: underscore;
+  caret-color: var(--highlights);
+}
 html {
   height: 100%;
 }
