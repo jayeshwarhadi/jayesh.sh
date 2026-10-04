@@ -140,5 +140,9 @@ body {
 .output-block .link {
   color: var(--primary);
 }
+.output-block .link:hover {
+  color: rgb(27, 198, 232);
+  text-decoration: none;
+}
 /* .output-block > .image {
 } */

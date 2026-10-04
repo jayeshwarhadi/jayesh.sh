@@ -73,16 +73,24 @@ contact - reach out to me
 projects - see what i am working on :P
 certifications - see what i have achieved
 skills - get to know my skills`,
-      about: `
-ABOUT:
-
+      about: `    
 I'm a <span class="highlight">developer</span> who loves turning complex problems into elegant, 
 efficient code. I specialize in <span class="highlight">building good, scalable applications 
 and learning new technologies</span> along the way. 
 
 When I'm not in the terminal or VS Code, you can find me making <a href="#" class="link">something in blender</a>
 or scrolling through <a href="https://www.linkedin.com/in/jayeshwarhadi/" target="_blank" class="link">LinkedIn.</span></a>`,
-      contact: `Contact Done`,
+      contact: `
+EMAIL:      <a href="mailto:jayesh.warhadi2005@gmail.com" class="link">jayesh.warhadi2005@gmail.com</a>
+GITHUB:     <a href="github.com/jayeshwarhadi" class="link">github.com/jayeshwarhadi</a>
+LINKEDIN:   <a href="linkedin.com/in/jayeshwarhadi" class="link">linkedin.com/in/jayeshwarhadi</a>
+STATUS:     <span class="highlight">Accepting freelance projects and Internships</span>
+
+I'm always open to discussing new projects, creative ideas, 
+or opportunities to be part of your visions.
+
+Email me directly at <a class="link" href="mailto:jayesh.warhadi2005@gmail.com">jayesh.warhadi2005@gmail.com</a> 
+for more infomation and availability.`,
       projects: `Projects Done`,
       certifications: `Certifications Done`,
       skills: `Skills Done`,
