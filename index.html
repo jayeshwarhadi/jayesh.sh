@@ -18,8 +18,8 @@
          and applies the appropritate theme to the page
     -->
     <script src="scripts/defaultTheme.js"></script>
-    <div id="container">
-      <div id="title">
+    <div class="container">
+      <div class="title">
         <div class="actionBtn">
           <!-- These are circle buttons linking github repo and refresh-->
           <div class="circle">
@@ -50,7 +50,7 @@
         </div>
       </div>
       <!-- Content starts -->
-      <div id="content">
+      <div class="content">
         <p id="start">Initializing<span class="loadingDots"></span></p>
         <p id="intro" style="white-space: pre-wrap"></p>
         <p id="user-commands">
@@ -66,6 +66,25 @@
           <input type="text" id="user-input" autocomplete="off" autofocus />
         </p>
       </div>
+    </div>
+    <div id="popupWindow" class="container">
+      <div class="title">
+        <div class="actionBtn">
+          <!-- circle button linking github repo-->
+          <div class="circle">
+            <a href="https://github.com/jayeshwarhadi/jayesh.sh" target="_blank"
+              ><img src="Assets/star.webp" alt="give a github star"
+            /></a>
+          </div>
+          <div id="closePopup" class="circle">
+            <a style="cursor: pointer"
+              ><img src="Assets/close.webp" alt="close popup"
+            /></a>
+          </div>
+        </div>
+        <h2></h2>
+      </div>
+      <div class="content"></div>
     </div>
     <!-- JQuery Google CDN link then external JS file -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>

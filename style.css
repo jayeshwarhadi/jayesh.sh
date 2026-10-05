@@ -31,13 +31,13 @@ body {
   display: flex;
   flex-direction: column;
 }
-#container {
+.container {
   border: 1px solid var(--primary);
   margin: 6px;
 
   flex: 1;
 }
-#title {
+.title {
   height: 30px;
   background-color: var(--secondary);
 
@@ -74,16 +74,19 @@ body {
   height: 60%;
   width: 60%;
 }
-#title > h2 {
+.title > h2 {
   text-align: center;
   color: var(--primary);
   font-size: 20px;
   margin-top: 2.5px;
 }
 
-#content > p {
-  color: var(--primary);
+.content {
   margin-left: 4px;
+}
+
+.content > p {
+  color: var(--primary);
 }
 .loadingDots::after {
   content: " .";
@@ -146,3 +149,20 @@ body {
 }
 /* .output-block > .image {
 } */
+
+/* Popup styling */
+#popupWindow {
+  display: none;
+  position: fixed;
+  top: 10%;
+  left: 10%;
+  width: 80%;
+  height: 80%;
+  background-color: var(--background);
+  box-shadow: 0px 0px 200px 100px var(--background);
+  overflow-y: auto;
+}
+.no-scroll {
+  overflow: hidden;
+  padding-right: calc(100vw - 100%);
+}

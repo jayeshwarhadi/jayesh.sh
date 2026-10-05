@@ -56,6 +56,31 @@ type 'help' for commands`;
   }, 1500);
 });
 
+// Popup function to display appropriate window
+const popupWindow = $("#popupWindow");
+const popupTitle = $("#popupWindow > .title > h2");
+const popupContent = $("#popupWindow > .content");
+const backgroundWindow = $("body");
+const popups = {
+  P1: `
+This is my Project 1 text
+<p> hi </p>`,
+  P2: `
+This is my Project 2 text
+<p> hi </p>`,
+};
+function showPopup(popup_id) {
+  backgroundWindow.addClass("no-scroll");
+  if (popup_id === "P1") {
+    popupTitle.text("projects@portfolio ~ jayesh.sh");
+    popupContent.html(popups[popup_id]);
+  } else if (popup_id === "P2") {
+    popupTitle.text("projects@portfolio ~ jayesh.sh");
+    popupContent.html(popups[popup_id]);
+  }
+  popupWindow.show();
+}
+
 // User Input and Content serve Logic
 const delay = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
 async function runProcess() {
@@ -91,7 +116,12 @@ or opportunities to be part of your visions.
 
 Email me directly at <a class="link" href="mailto:jayesh.warhadi2005@gmail.com">jayesh.warhadi2005@gmail.com</a> 
 for more infomation and availability.`,
-      projects: `Projects Done`,
+      projects: `
+<span class="highlight">NAME                 TECH STACK            STATUS         LINK</span> 
+<span id="P1" style="cursor: pointer;" class="link">Portfolio</span>             [Vanilla JS, CSS]     [Completed]    <a href="https://hire-lens-10.vercel.app/" class="link">[https://jayeshwarhadi.github.io/Portfolio/]</a>
+<span id="P2" style="cursor: pointer;" class="link">HireLens</span>              [React, Node.js]      [Archived]     <a href="https://hire-lens-10.vercel.app/" class="link">[https://hire-lens-10.vercel.app/]</a>
+
+<span class="link">Click</span> on any Project's Name to open detailed overview.`,
       certifications: `Certifications Done`,
       skills: `Skills Done`,
     };
@@ -110,6 +140,9 @@ for more infomation and availability.`,
           $("#user-commands").append(
             `<div class="output-block">${commands[cmd]}</div>`,
           );
+          $("#P1,#P2").click(function (e) {
+            showPopup(e.target.id);
+          });
         } else if (cmd === "") {
           let echoLine = `guest@portfolio:<span class="location">~/no-input</span>$ <span>${rawInput}</span>`;
           $("#user-commands").append(echoLine);
@@ -133,3 +166,8 @@ for more infomation and availability.`,
 }
 
 runProcess();
+
+$("#closePopup").click(function () {
+  $("body").removeClass("no-scroll");
+  popupWindow.hide();
+});
