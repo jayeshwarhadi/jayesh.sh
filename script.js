@@ -63,11 +63,29 @@ const popupContent = $("#popupWindow > .content");
 const backgroundWindow = $("body");
 const popups = {
   P1: `
-This is my Project 1 text
-<p> hi </p>`,
+<h2>Portfolio Website</h2>
+<p>This is my main portfolio website which i made using html,css&js</p>
+<h4>Skills Learnt :</h4>
+<p>HTML ▓▓▓▓▓▓▓▓▓▒ 90%
+CSS  ▓▓▓▓▓▓▓▓▓▒ 90%
+JS   ▓▓▓▓▓▓▓▓▒▒ 80%</p>
+<a class="btn" href="https://jayeshwarhadi.github.io/Portfolio/" target="_blank">Visit Website</a>
+\n<a class="btn" href="https://github.com/jayeshwarhadi/Portfolio" target="_blank">See Project Code</a>
+<img class="onlyImg" src="Assets/portfolio.webp" alt="" srcset="" />`,
   P2: `
-This is my Project 2 text
-<p> hi </p>`,
+<h2>Hirelens</h2>
+<span class="warning">[Archived]</span>
+<p>An AI Interviewer which interactively converses with the user and
+involves the user into verbal and coding rounds then analyzes his posture
+and gives feedback . next round consists of HR which gives feedback on the
+resume of the user</p>
+<h4>Skills Learnt :</h4>
+<p>TypeScript (React) ▓▓▓▓▓▒▒▒▒▒ 50%
+HTML               ▓▓▓▓▓▓▓▓▓▒ 10%</p>
+<a class="btn" href="https://hire-lens-10.vercel.app/" target="_blank">Visit Website</a>
+\n<a class="btn" href="https://github.com/jayeshwarhadi/HireLens" target="_blank">See Project Code</a>
+\n<a class ="btn" href="https://devpost.com/software/hirelens" target="_blank">Devpost Project Profile</a> <span class="warning">~ Has Demo Video</span>
+<img class="onlyImg" src="Assets/hirelens.webp" alt="" srcset="" />`,
 };
 function showPopup(popup_id) {
   backgroundWindow.addClass("no-scroll");

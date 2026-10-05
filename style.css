@@ -162,6 +162,29 @@ body {
   box-shadow: 0px 0px 200px 100px var(--background);
   overflow-y: auto;
 }
+#popupWindow > .content {
+  white-space: pre-wrap;
+}
+#popupWindow > .content > .btn {
+  background-color: var(--highlights);
+  color: var(--primary);
+  text-decoration: none;
+  padding: 5px 10px;
+}
+#popupWindow > .content > .btn:hover {
+  background-color: var(--primary);
+  color: var(--highlights);
+}
+#popupWindow > .content > .onlyImg {
+  position: absolute;
+  bottom: 10%;
+  right: 10%;
+  max-width: 40%;
+  border: 4px solid var(--secondary);
+}
+#popupWindow > .content > .warning {
+  color: rgb(27, 198, 232);
+}
 .no-scroll {
   overflow: hidden;
   padding-right: calc(100vw - 100%);
