@@ -2,6 +2,10 @@
 
 An Terminal themed Portfolio website. We spend most of the time in unix terminals why not extend this to self expression ?
 
+# Project Overview
+- Project fully functional and ready for big screens (desktops and tvs) within 7 Days and 23 Commits.
+- Small screen functionality pending.
+
 # Project Workflow
 
 ## Requirements
