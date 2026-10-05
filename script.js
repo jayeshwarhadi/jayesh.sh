@@ -86,16 +86,29 @@ HTML               ▓▓▓▓▓▓▓▓▓▒ 10%</p>
 \n<a class="btn" href="https://github.com/jayeshwarhadi/HireLens" target="_blank">See Project Code</a>
 \n<a class ="btn" href="https://devpost.com/software/hirelens" target="_blank">Devpost Project Profile</a> <span class="warning">~ Has Demo Video</span>
 <img class="onlyImg" src="Assets/hirelens.webp" alt="" srcset="" />`,
+  C: `
+<p>NAME                    DOMAIN/TYPE    COMMENTS            LINK</p> 
+Google PromptWars       Hack2Skill     Appreciation        <a class="warning" target="_blank" href="https://drive.google.com/file/d/1gWLubbzcZ6yi_IdKtnItJSEHnxGPpRlQ/view?usp=sharing" class="link">Click Me</a>
+Google FundMyCrazy      Ideathon       Participation       <a class="warning" target="_blank" href="https://drive.google.com/file/d/1azBLD_GMYJEsDIKYM8rO7X7UJbJF4sCz/view?usp=sharing" class="link">Click Me</a>
+Smart India Hackathon   SIH2026        Participation       <a class="warning" target="_blank" href="https://drive.google.com/file/d/1jYYMKyZH5NAD1yNVMWQCjPu_T7vhJLIg/view?usp=sharing" class="link">Click Me</a>
+Google GenAI Hackathon  Hack2Skill     Participation       <a class="warning" target="_blank" href="https://drive.google.com/file/d/1BDjlliaKvPZVT2euxRVbLkIpGfIoICUY/view?usp=sharing" class="link">Click Me</a>
+Python Programing       Reliance F.    Course Completion   <a class="warning" target="_blank" href="https://drive.google.com/file/d/1r2j0fmWCmtPYPyDD5DhDDFd7BaSnDI-C/view?usp=sharing" class="link">Click Me</a>
+Human Values            Reliance F.    Course Completion   <a class="warning" target="_blank" href="https://drive.google.com/file/d/16oZonJRUYSUVWai6cX6RiYip1cFqa7b6/view?usp=sharing" class="link">Click Me</a>
+Elite Coders  \`26       SummerofCode   Participation       <a class="warning" target="_blank" href="https://drive.google.com/file/d/1kbWGQDMe1EC6i3AAhSHqsQaqD7oQpngy/view?usp=sharing" class="link">Click Me</a>
+Tata Crucible Quiz      Unstop&TATA    Participation       <a class="warning" target="_blank" href="https://drive.google.com/file/d/1E24-I9agji4np9wyVQH7j7AHU9_aRD5j/view?usp=sharing" class="link">Click Me</a>
+
+<p>Thanks for showing interest in my Certifications :D</p>`,
 };
 function showPopup(popup_id) {
   backgroundWindow.addClass("no-scroll");
   if (popup_id === "P1") {
     popupTitle.text("projects@portfolio ~ jayesh.sh");
-    popupContent.html(popups[popup_id]);
   } else if (popup_id === "P2") {
     popupTitle.text("projects@portfolio ~ jayesh.sh");
-    popupContent.html(popups[popup_id]);
+  } else if (popup_id === "C") {
+    popupTitle.text("certifications@portfolio ~ jayesh.sh");
   }
+  popupContent.html(popups[popup_id]);
   popupWindow.show();
 }
 
@@ -105,7 +118,7 @@ async function runProcess() {
   await delay(2000);
   $(document).ready(function () {
     $("#address").show();
-    $(document).click(function () {
+    $(document).keydown(function () {
       $("#user-input").focus();
     });
     const commands = {
@@ -136,29 +149,78 @@ Email me directly at <a class="link" href="mailto:jayesh.warhadi2005@gmail.com">
 for more infomation and availability.`,
       projects: `
 <span class="highlight">NAME                 TECH STACK            STATUS         LINK</span> 
-<span id="P1" style="cursor: pointer;" class="link">Portfolio</span>             [Vanilla JS, CSS]     [Completed]    <a href="https://hire-lens-10.vercel.app/" class="link">[https://jayeshwarhadi.github.io/Portfolio/]</a>
-<span id="P2" style="cursor: pointer;" class="link">HireLens</span>              [React, Node.js]      [Archived]     <a href="https://hire-lens-10.vercel.app/" class="link">[https://hire-lens-10.vercel.app/]</a>
+<span id="P1" style="cursor: pointer;" class="link">Portfolio</span>            [Vanilla JS, CSS]     [Completed]    <a target="_blank" href="https://hire-lens-10.vercel.app/" class="link">[https://jayeshwarhadi.github.io/Portfolio/]</a>
+<span id="P2" style="cursor: pointer;" class="link">HireLens</span>             [React, Node.js]      [Archived]     <a target="_blank" href="https://hire-lens-10.vercel.app/" class="link">[https://hire-lens-10.vercel.app/]</a>
 
 <span class="link">Click</span> on any Project's Name to open detailed overview.`,
-      certifications: `Certifications Done`,
-      skills: `Skills Done`,
+      certifications: `
+<span class="highlight">NAME                    DOMAIN/TYPE    COMMENTS            LINK</span> 
+Machine Learning        NPTEL          Elite 67%           <a target="_blank" href="https://drive.google.com/file/d/1cyMSfvIW72hD_0nVodz-L6iVXFX5-DMM/view?usp=sharing" class="link">Click Me</a>
+Database Management     NPTEL          Participation 50%   <a target="_blank" href="https://drive.google.com/file/d/1u-YivkdQZx-DNyJqAho3Aqr_ra-OGTJG/view?usp=sharing" class="link">Click Me</a>
+Website Development     Udemy          Course Completion   <a target="_blank" href="https://drive.google.com/file/d/1MWFTD6pSbX2_zo_jfQcjWB_aafvzgTu_/view?usp=sharing" class="link">Click Me</a>
+Google GenAI Hackathon  Hack2Skill     Participation       <a target="_blank" href="https://drive.google.com/file/d/1BDjlliaKvPZVT2euxRVbLkIpGfIoICUY/view?usp=sharing" class="link">Click Me</a>
+Python V. Internship    Eduskill       Virtual Internship  <a target="_blank" href="https://drive.google.com/file/d/1M4_Jybsgg2Skw0guqaRdgIj_DwNI_n9y/view?usp=sharing" class="link">Click Me</a>
+UI/UX V. Internship     Eduskill       Virtual Internship  <a target="_blank" href="https://drive.google.com/file/d/16hqo7aB1HnuehvqF8bBhzoFGJNRpw35c/view?usp=sharing" class="link">Click Me</a>
+<span class="highlight">These are few of my Best Certificates</span>
+
+<a id="C" class="link" style="cursor:pointer">Click here</a> to view full list of Certificates from Google, Hack2Skill, Reliance, Unstop ,etc.`,
+      skills: `<p>
+HTML         ▓▓▓▓▓▓▓▓▓▒ 90%  _
+CSS          ▓▓▓▓▓▓▓▓▓▒ 90%  _|
+JS           ▓▓▓▓▓▓▓▓▒▒ 80%  _|=  <a href="https://drive.google.com/file/d/1MWFTD6pSbX2_zo_jfQcjWB_aafvzgTu_/view?usp=sharing">Udemy Webdev Course</a>
+JQuery       ▓▓▓▓▓▓▓▓▒▒ 80%  _|   by Hitesh Choudhary
+3D Modelling ▓▓▓▓▓▒▒▒▒▒ 50%
+Harmonium    ▓▓▓▓▓▒▒▒▒▒ 50%</p>`,
     };
     $("#user-input").on("keypress", function (e) {
       if (e.which === 13) {
         // 13 is the keycode for Enter
         let rawInput = $(this).val();
         let cmd = rawInput.trim().toLowerCase();
+        let acceptedcmd = [
+          "certificate",
+          "certificates",
+          "certification",
+          "project",
+          "skill",
+          "social",
+          "socials",
+        ];
         if (cmd === "clear") {
           // Empty out the output div completely
           $("#user-commands").empty();
-        } else if (commands.hasOwnProperty(cmd)) {
+        } else if (commands.hasOwnProperty(cmd) || acceptedcmd.includes(cmd)) {
           let echoLine = `guest@portfolio:<span class="location">~/commands</span>$ <span>${rawInput}</span>`;
           $("#user-commands").append(echoLine);
           // Output the matching code block
-          $("#user-commands").append(
-            `<div class="output-block">${commands[cmd]}</div>`,
-          );
-          $("#P1,#P2").click(function (e) {
+          if (
+            cmd === "certifications" ||
+            acceptedcmd.slice(0, 3).includes(cmd)
+          ) {
+            $("#user-commands").append(
+              `<div class="output-block">${commands["certifications"]}</div>`,
+            );
+          } else if (cmd === "projects" || cmd === "project") {
+            $("#user-commands").append(
+              `<div class="output-block">${commands["projects"]}</div>`,
+            );
+          } else if (cmd === "skills" || cmd === "skill") {
+            $("#user-commands").append(
+              `<div class="output-block">${commands["skills"]}</div>`,
+            );
+          } else if (
+            cmd === "contact" ||
+            acceptedcmd.slice(5, 7).includes(cmd)
+          ) {
+            $("#user-commands").append(
+              `<div class="output-block">${commands["contact"]}</div>`,
+            );
+          } else {
+            $("#user-commands").append(
+              `<div class="output-block">${commands[cmd]}</div>`,
+            );
+          }
+          $("#P1,#P2,#C").click(function (e) {
             showPopup(e.target.id);
           });
         } else if (cmd === "") {
